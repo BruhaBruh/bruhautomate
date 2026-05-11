@@ -16,7 +16,7 @@ import (
 var listCmd = &cobra.Command{
 	Use:     "list",
 	Short:   "List all available commands",
-	Aliases: []string{"t"},
+	Aliases: []string{},
 	Run: func(cmd *cobra.Command, args []string) {
 		cfg = config.New(configFile)
 		if err := cfg.LoadOrCreate(); err != nil {
